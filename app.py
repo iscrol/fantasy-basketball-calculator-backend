@@ -10,7 +10,7 @@ from models import Player
 from dotenv import load_dotenv
 
 app = Flask(__name__, static_folder='build', static_url_path='')
-CORS(app, resources={r"/api/*": {"origins": "*"}})
+CORS(app, resources={r"/api/*": {"origins": "https://6687ec3ef283304f1b4ba87f--fantasy-basketball-calculator.netlify.app"}})
 
 dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
 load_dotenv(dotenv_path)
